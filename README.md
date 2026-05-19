@@ -256,9 +256,7 @@ This prevents MongoDB insertion operations from blocking MQTT consumption.
 
 # Project Structure
 
-```
-mqtt-ingestion-system/
-│
+```text
 ├── backend/
 │   ├── ingestion/
 │   │   ├── management/
@@ -272,11 +270,6 @@ mqtt-ingestion-system/
 ├── publisher/
 │   └── publisher.py
 │
-├── logs/
-│   ├── publisher.log
-│   ├── consumer.log
-│   └── mongodb.log
-│
 ├── .env.example
 ├── requirements.txt
 ├── .gitignore
@@ -285,6 +278,8 @@ mqtt-ingestion-system/
 └── README.md
 ```
 
+Log files are generated dynamically during runtime and are excluded from version control using `.gitignore`.
+
 ---
 
 # Setup Instructions
@@ -292,7 +287,7 @@ mqtt-ingestion-system/
 ## 1. Clone Repository
 
 ```
-git clone <repository-url>
+git clone https://github.com/aniketk4971/mqtt-ingestion-system
 cd mqtt-ingestion-system
 ```
 
@@ -325,8 +320,6 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-
----
 
 ---
 
