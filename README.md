@@ -288,7 +288,6 @@ Log files are generated dynamically during runtime and are excluded from version
 
 ```
 git clone https://github.com/aniketk4971/mqtt-ingestion-system
-cd mqtt-ingestion-system
 ```
 
 ---
